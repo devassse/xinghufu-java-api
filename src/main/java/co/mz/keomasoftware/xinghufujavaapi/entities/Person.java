@@ -15,6 +15,7 @@ public class Person {
     private String name;
     private String middlename;
     private String surname;
+    private String nickname;
     private Date birthdate;
     private Date created_at;
     private Date updated_at;
@@ -23,11 +24,12 @@ public class Person {
 
     public Person(){}
 
-    public Person(long id, String name, String middlename, String surname, Date birthdate, Date created_at, Date updated_at, Date created_by, Date updated_by) {
+    public Person(long id, String name, String middlename, String surname, String nickname, Date birthdate, Date created_at, Date updated_at, Date created_by, Date updated_by) {
         this.id = id;
         this.name = name;
         this.middlename = middlename;
         this.surname = surname;
+        this.nickname = nickname;
         this.birthdate = birthdate;
         this.created_at = created_at;
         this.updated_at = updated_at;
@@ -65,6 +67,14 @@ public class Person {
 
     public void setSurname(String surname) {
         this.surname = surname;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public Date getBirthdate() {
